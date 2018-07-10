@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Festibuddy</string>
+    <string name="search_title">Search</string>
+    <string name="access_token" translatable="false">pk.eyJ1IjoidGxoc21lZW5rIiwiYSI6ImNqaXBxNm9tdzB3cDgza3BvN2I0cmU2NG8ifQ.SNL5g1NEQOx1h2u_-5lYHA</string>
 </resources>
