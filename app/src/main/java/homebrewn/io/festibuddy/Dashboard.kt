@@ -1,6 +1,7 @@
 package homebrewn.io.festibuddy
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.SearchView
@@ -53,6 +54,10 @@ class Dashboard : AppCompatActivity(), PermissionsListener, LocationEngineListen
             mapboxMap ->
             this.map = mapboxMap
             enableLocationPlugin()
+        }
+
+        create_group_fab.setOnClickListener {
+            startActivity(Intent(this, CreateGroup::class.java))
         }
     }
 

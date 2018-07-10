@@ -27,7 +27,6 @@
             mapbox:mapbox_cameraTargetLng="-77.0295"
             mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
             mapbox:mapbox_cameraZoom="12" >
-
         </com.mapbox.mapboxsdk.maps.MapView>
     </FrameLayout>
 
@@ -46,8 +45,6 @@
             android:layout_height="68dp"
             android:orientation="horizontal">
 
-
-
             <android.support.v7.widget.Toolbar
                 android:id="@+id/search_bar"
                 android:layout_width="match_parent"
@@ -57,8 +54,6 @@
                 android:foregroundTint="@color/colorPrimary"
                 android:theme="@style/InlineActionBar"
                 android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
-
         </LinearLayout>
 
         <ListView
@@ -74,18 +69,8 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <!--<android.support.design.widget.FloatingActionButton-->
-                <!--android:id="@+id/floatingActionButton"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:clickable="true"-->
-                <!--sothree:srcCompat="@android:drawable/ic_menu_add"-->
-                <!--android:backgroundTint="@color/colorAccent"-->
-                <!--android:borderWidth="0dp"-->
-                <!--android:elevation="6dp"-->
-                <!--android:fabSize="normal" />-->
             <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab"
+                android:id="@+id/create_group_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|bottom"
