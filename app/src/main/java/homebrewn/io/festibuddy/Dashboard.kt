@@ -25,10 +25,11 @@ class Dashboard : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.search_menu, menu)
 
-        System.err.println("ADDING STUFF")
         val search = menu?.findItem(R.id.action_search)
-        when(search){
-            is SearchView -> setOptions(search)
+        val actionView = search?.actionView
+
+        when(actionView){
+            is SearchView -> setOptions(actionView)
         }
 
         return super.onCreateOptionsMenu(menu)
@@ -36,8 +37,8 @@ class Dashboard : AppCompatActivity() {
 
     private fun setOptions(search: SearchView) {
         search.isSubmitButtonEnabled=true
-        search_bar.setOnClickListener {
-            Toast.makeText(this, ":P", Toast.LENGTH_SHORT).show()
+        search.setOnSearchClickListener {
+            sliding_layout.panelState = SlidingUpPanelLayout.PanelState.EXPANDED
         }
     }
 

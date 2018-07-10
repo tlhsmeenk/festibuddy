@@ -23,8 +23,11 @@
     </style>
 
 
-    <style name="ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+    <style name="InlineActionBar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <item name="android:displayOptions">homeAsUp</item>
+        <item name="android:textColorPrimary">@color/colorInlineToolbar</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
     </style>
 
 </resources>
