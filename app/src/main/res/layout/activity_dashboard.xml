@@ -2,6 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:sothree="http://schemas.android.com/apk/res-auto"
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/sliding_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +26,9 @@
             mapbox:mapbox_cameraTargetLat="38.9098"
             mapbox:mapbox_cameraTargetLng="-77.0295"
             mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
-            mapbox:mapbox_cameraZoom="12" />
+            mapbox:mapbox_cameraZoom="12" >
+
+        </com.mapbox.mapboxsdk.maps.MapView>
     </FrameLayout>
 
     <!-- SLIDING LAYOUT -->
@@ -70,6 +73,27 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/floatingActionButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:clickable="true"-->
+                <!--sothree:srcCompat="@android:drawable/ic_menu_add"-->
+                <!--android:backgroundTint="@color/colorAccent"-->
+                <!--android:borderWidth="0dp"-->
+                <!--android:elevation="6dp"-->
+                <!--android:fabSize="normal" />-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/baseline_group_add_black_36"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/colorAccent"
+                app:borderWidth="0dp"
+                android:clickable="true" />
         </ScrollView>
     </LinearLayout>
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
